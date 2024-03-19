@@ -1,0 +1,122 @@
+body {
+    background-color: #D9E4EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.nav {
+    display: flex;
+    box-shadow: 2px 2px 2px 1px rgba(175, 175, 175, 0.423);
+    border: 5px solid #385E72;
+    background-color: #6AABD2;
+    border-radius: .5rem;
+    margin-top: 50px;
+    height: 3.5rem;
+    width: 75%;
+    max-width: 750px;
+}
+
+.game-container {
+    box-shadow: 2px 2px 2px 1px rgba(175, 175, 175, 0.423);
+    border: 5px solid #385E72;
+    background-color: white;
+    border-radius: .5rem;
+    margin-top: 15px;
+    height: 500px;
+    width: 75%;
+    max-width: 750px;
+    display: flex;
+}
+
+.play-area {
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+#nav-brand, #button-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 1%;
+}
+
+#nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 3rem;
+    border-radius: .3rem;
+}
+
+#text-area {
+    border-radius: .5rem;
+    flex: 1;
+    margin: 1rem;
+}
+
+#game-area {
+    flex: 2;
+    margin: 2.5rem;
+    display: grid;
+    grid-template-columns: [col1-start] 32% [col1-end col2-start] 2% [col2-end col3start] 32% [col3-end col4-start] 2% [col4-end col5-start] 32% [col5-end];
+    grid-template-rows: [row1-start] 32% [row1-end rowl2-start] 2% [row2-end row3start] 32% [row3-end row4-start] 2% [row4-end row5-start] 32% [row5-end];
+}
+
+#vert-one {
+    background-color: #385E72;
+    border-radius: 1rem;
+    grid-column-start: 2;
+    grid-row-start: row1-start;
+    grid-row-end: row5-end;
+}
+
+#vert-two {
+    background-color: #385E72;
+    border-radius: 1rem;
+    grid-column-start: 4;
+    grid-row-start: row1-start;
+    grid-row-end: row5-end;
+}
+
+#horz-one {
+    background-color: #385E72;
+    border-radius: 1rem;
+    grid-row-start: 2;
+    grid-column-start: col1-start;
+    grid-column-end: col5-end;
+}
+
+#horz-two {
+    background-color: #385E72;
+    border-radius: 1rem;
+    grid-row-start: 4;
+    grid-column-start: col1-start;
+    grid-column-end: col5-end;
+}
+
+#button-area {
+    justify-content: right;
+}
+
+#reset {
+    height: 70%;
+}
+
+#nav-button:hover {
+    background-color: #609cc2;
+}
+
+.play-area:hover {
+    background-color: rgba(209, 209, 209, 0.386);
+}

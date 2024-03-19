@@ -24,8 +24,3 @@ const gameBoard = (function () {
 
     return { draw, update };
 })();
-
-gameBoard.draw();
-var move = Number(prompt("Enter your move:"));
-gameBoard.update(move, 'X');
-gameBoard.draw();
