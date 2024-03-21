@@ -12,7 +12,26 @@
 <body>
     <div class="modal">
         <div class="modal-content">
-            
+            <h1 id="modal-header">Before we start, we need a few things...</h1>
+            <form action="" class="start-form">
+                <h2 class="first-question">Whats your first name?</h2>
+                <input type="text"  id="first-name" placeholder="Roger Rabbit">
+                <h2>What would you like to play as?</h2>
+                <div id="token-selection">
+                    <h2 class="token-label">'X'</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="x-select">
+                        <span class="slider round"></span>
+                    </label>
+                    <h2 class="token-label">'O'</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="o-select">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="horz-divider"></div>
+                <button class="sub-button" type="submit">Play</button>
+            </form>
         </div>
     </div>
 
@@ -20,7 +39,7 @@
         <div id="nav-brand">
             <h1>Tic Tac Toe</h1>
             <h2 id="bar">| </h2>
-            <h2 id="welcome">Have Fun</h2>
+            <h2 id="welcome">Good Luck</h2>
         </div>
         <div id="button-area">
             <a href=""><div id="nav-button">
